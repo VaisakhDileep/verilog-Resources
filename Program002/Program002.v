@@ -17,7 +17,7 @@ There are two ways to represent numbers in verilog:
 /*
 Syntax for sized numbers:
     <size>'<base format> <number>
-        <size> can only defined in decimal. It describes the number of bits in the number.
+        <size> can only be defined in decimal. It describes the number of bits in the number.
         <base format> can be decimal('d' or 'D'), hexadecimal('h', 'H'), binary('b', 'B'), octal('o', 'O').
         <number> can be consecutive digits from 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a(A), b(B), c(C), d(D), e(E), f(F).
 */
@@ -25,17 +25,17 @@ Syntax for sized numbers:
         number = 2'b11; // This is a 6 bit binary number.
 
         $display("number(decimal): %-d", number); // display in decimal format. '-' will left-align the output.
-        $display("number(binary) : %b\n", number); // display in binary format
+        $display("number(binary) : %b\n", number); // display in binary format.
 
         number = 6'o77; // This is a 6 bit octal number.
 
         $display("number(decimal): %-d", number);
-        $display("number(octal)  : %o\n", number); // display in octal format
+        $display("number(octal)  : %o\n", number); // display in octal format.
 
         number = 8'hFF; // This is a 8 bit hexadecimal number.
 
         $display("number(decimal)    : %-d", number);
-        $display("number(hexadecimal): %h", number); // display in hexadecimal format
+        $display("number(hexadecimal): %h\n", number); // display in hexadecimal format.
 
         number = 8'd255; // This is a 8 bit decimal number.
 
@@ -62,7 +62,21 @@ Note: Numbers without "<size>" specification have a default number of bits that 
 
         number = 'ha0bdf;
 
-        $display("number(hexadecimal): %h", number);
+        $display("number(hexadecimal): %h\n", number);
+
+        number = -32'd2022; // Inorder to represent negative numbers we have to place '-' before "<size>" and not anywhere else.
+        // number = 32'-d2022; // This will give an error.
+        // number = 32'd-2022; // This will given an error.
+
+        $display("number(decimal): %-d\n", number);
+
+        number = 32-'d2022; // This will subtract '2022' from '32', which is not our desired output.
+
+        $display("number(decimal): %-d\n", number);
+
+        number = 32'd10_000; // We can add '_' anywhere in the number except the first character for better readability.
+
+        $display("number(decimal): %-d", number);
 
         $finish;
     end
