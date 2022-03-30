@@ -35,6 +35,8 @@ Verilog supports 4 values:
     $display("int_variable_3: %d", int_variable_3);
     $display("int_variable_4: %d", int_variable_4);
 
+    $finish;
+
     end
 
 endmodule
