@@ -25,7 +25,7 @@ module represent_escaped_identifer();
     integer \$@******@$    = 7; // This is valid(including tab after the identifier).
 
     integer \$@********@$
-    = 8; // This is valid(including tab after the identifier).
+    = 8; // This is valid(including newline after the identifier).
 
     initial begin
         $finish;
