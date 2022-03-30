@@ -19,6 +19,7 @@ module understand_nets();
     wire wire_4 = 1'b1; // This wire is fixed to logic value '1' at declaration.
 
     initial begin
+        $finish;
     end
 
 endmodule
