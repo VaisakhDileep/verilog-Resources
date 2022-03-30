@@ -22,13 +22,12 @@ Note: We cannot nest modules. One module definition cannot contain another modul
 
 // Note: Multi-level comments cannot be nested.
 
-/*
-Identifier naming rule: Identifiers are made up of alphanumeric characters, underscore('_') and the dollar sign('$') and are case-sensitive. Identifiers should start with an alphabet or an underscore(should not start with '$').
-*/
-
 module hello_world();
+
     initial begin
         $display("Hello, World!");
+
         $finish;
     end
+
 endmodule

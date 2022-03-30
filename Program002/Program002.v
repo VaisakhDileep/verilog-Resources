@@ -80,5 +80,4 @@ Note: Numbers without "<size>" specification have a default number of bits that 
 
         $finish;
     end
-
 endmodule
