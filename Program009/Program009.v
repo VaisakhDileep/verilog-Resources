@@ -9,7 +9,7 @@ module understand_arrays();
 // Arrays are supported in verilog for reg, integer, time and vector register data types. Arrays are not allowed for real data types.
 // Note: Multi-dimensional arrays are not permitted in verilog.
 
-// Difference between vectors and arrays: A vector is a single element that is n-bits wide. Arrays are multiple elements that are 1-bit or n-bits wide.
+// Difference between vectors and arrays: A vector is a single element that is n-bit wide. Arrays are multiple elements that are 1-bit or n-bit wide.
 
     integer integer_array_variable_1[0:7]; // An array of 8 integer variables.
 
@@ -17,7 +17,7 @@ module understand_arrays();
 
     reg reg_array_variable[0:31]; // Array of 32 1-bit register variables.
 
-    reg[4:0] reg_vector_array_variable[0:7]; // Array of 8 registers with width of 5 bits.
+    reg[4:0] reg_vector_array_variable[0:7]; // Array of 8 registers with width of 8-bits.
 
     time time_array_variable[0:8]; // Array of 9 time checkpoints.
 
