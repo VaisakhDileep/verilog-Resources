@@ -8,3 +8,4 @@ Program007: [This program helps to understand vectors in verilog.](../Program007
 Program008: [This program helps to understand integer, real and time register data type in verilog.](../Program008/Program008.v)<br>
 Program009: [This program helps to understand arrays in verilog.](../Program009/Program009.v)<br>
 Program010: [This program helps to understand how to model memories in verilog.](../Program010/Program010.v)<br>
+Program011: [This program helps to understand how to declare strings in verilog.](../Program011/Program011.v)<br>

@@ -20,6 +20,22 @@ module understand_vectors();
     reg[10:0] register_2; // register data-type with width of 11 bits. Here MSB is register_2[10] and LSB is register_2[0].
 
     initial begin
+
+        register_1 = 10;
+        register_2 = 10;
+
+        $display("register_1: %b", register_1);
+        $display("register_2: %b\n", register_2); // Notice here both the outputs are same('10').
+
+        register_1 = 0;
+        register_2 = 0; // Resetting the values.
+
+        register_1[0] = 1;
+        register_2[0] = 1;
+
+        $display("register_1: %b", register_1);
+        $display("register_2: %b", register_2); // Notice here we are getting different outputs(for "register_1" MSB is at index '0' whereas for "register_2" MSB is at index '10').
+
         $finish;
     end
 
