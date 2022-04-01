@@ -33,7 +33,12 @@ Verilog supports 4 values:
     $display("int_variable_1: %d", int_variable_1);
     $display("int_variable_2: %d", int_variable_2);
     $display("int_variable_3: %d", int_variable_3);
-    $display("int_variable_4: %d", int_variable_4);
+    $display("int_variable_4: %d\n", int_variable_4);
+
+    $display("int_variable_1: %b", int_variable_1);
+    $display("int_variable_2: %b", int_variable_2);
+    $display("int_variable_3: %b", int_variable_3);
+    $display("int_variable_4: %b", int_variable_4); // Notice here how some bits are set while other are either 'x' or 'z'.
 
     $finish;
 

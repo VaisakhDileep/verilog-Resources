@@ -13,7 +13,7 @@ module understand_registers();
     reg register;
 
     initial begin
-        $display("register: %d", register); // Defaulty registers have value 'x'.
+        $display("register: %d", register); // By default registers have value 'x'.
 
         register = 1'b1;
 

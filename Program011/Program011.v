@@ -18,6 +18,8 @@ module represent_strings();
     reg[1:8*15] string_3;
     reg[1:8*20] string_4;
 
+    reg[1:8*1] single_char;
+
     initial begin
         string_1 = "Vaisakh Dileep";
         string_2 = "Vaisakh Dileep";
@@ -43,6 +45,10 @@ module represent_strings();
         string_3 = "Vaisakh Dileep Rocket League 2022";
 
         $display("string_1: %s", string_1);
-        $display("String_2: %s", string_3); // Notice here the string is truncated from the left.
+        $display("String_2: %s\n", string_3); // Notice here the string is truncated from the left.
+
+        single_char = "\112"; // '\ooo' is a character written in 1-3 octal digits.
+
+        $display("single_char: %s", single_char); // "112" in base 8 corresponds to 'J' in the ASCII table.
     end
 endmodule
