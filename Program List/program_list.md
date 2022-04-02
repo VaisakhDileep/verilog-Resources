@@ -10,3 +10,4 @@ Program009: [This program helps to understand arrays in verilog.](../Program009/
 Program010: [This program helps to understand how to model memories in verilog.](../Program010/Program010.v)<br>
 Program011: [This program helps to understand how to declare strings in verilog.](../Program011/Program011.v)<br>
 Program012: [This program helps to understand $monitor() and $display() in verilog.](../Program012/Program012.v)<br>
+Program013: [This program helps to understand $stop and $finish in verilog.](../Program013/Program013.v)<br>

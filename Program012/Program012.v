@@ -4,7 +4,7 @@ Date        : 2, April, 2022
 Description : This program helps to understand $monitor() and $display() in verilog.
 */
 
-module understand_system_tasks();
+module understand_$monitor_$display_system_tasks();
 
 // Verilog provides standard system tasks to do certain routine operations. All system tasks appear in the form $<keyword>.
 
@@ -32,6 +32,7 @@ module understand_system_tasks();
     // Note: $monitor() continuously monitors the value of the variables or signals specified in the parameter list and displays all hte parameters in the list whenever the value of any one variable or signal changes.
     // Note: Unlike $display(), $monitor() only needs to be invoked once.
     // Note: Only one monitoring function can be active at a time. If there is more than one $monitor() function, the last $monitor() function will be the active function.
+    // Note: $monitor() starts executing from simulation time '0'.
 
         $monitor($time, " string_1: %s", string_1);
 
@@ -46,6 +47,8 @@ module understand_system_tasks();
         $monitoron; // "monitoron" will enable monitoring.
 
         #25 string_1 = "2022"; // Notice here this change get's monitored, this is because we used "$monitoron".
+
+        $finish;
     end
 
 endmodule
