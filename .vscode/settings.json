@@ -3,6 +3,8 @@
         "verilog"
     ],
     "cSpell.words": [
-        "endmodule"
+        "endmodule",
+        "monitoroff",
+        "monitoron"
     ]
 }

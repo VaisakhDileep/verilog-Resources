@@ -8,7 +8,7 @@ module represent_numbers();
 /*
 There are two ways to represent numbers in verilog:
 1. Sized numbers
-2. Unsized numbers
+2. Un-sized numbers
 */
 
     integer number;
@@ -22,22 +22,22 @@ Syntax for sized numbers:
         <number> can be consecutive digits from 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a(A), b(B), c(C), d(D), e(E), f(F).
 */
 
-        number = 2'b11; // This is a 6 bit binary number.
+        number = 2'b11; // This is a 6-bit binary number.
 
         $display("number(decimal): %-d", number); // display in decimal format. '-' will left-align the output.
         $display("number(binary) : %b\n", number); // display in binary format.
 
-        number = 6'o77; // This is a 6 bit octal number.
+        number = 6'o77; // This is a 6-bit octal number.
 
         $display("number(decimal): %-d", number);
         $display("number(octal)  : %o\n", number); // display in octal format.
 
-        number = 8'hFF; // This is a 8 bit hexadecimal number.
+        number = 8'hFF; // This is a 8-bit hexadecimal number.
 
         $display("number(decimal)    : %-d", number);
         $display("number(hexadecimal): %h\n", number); // display in hexadecimal format.
 
-        number = 8'd255; // This is a 8 bit decimal number.
+        number = 8'd255; // This is a 8-bit decimal number.
 
         $display("number(decimal): %-d\n", number);
 

@@ -11,9 +11,9 @@ module understand_vectors();
 
     wire wire_1; // wire data-type with width 1-bit(scalar value).
 
-    wire[0:10] wire_2; // wire data-type with width of 11-bits(bus). Here MSB is wire_2[0] and LSB is wire_2[10].
+    wire[0:10] wire_2; // wire data-type with width of 11 bits(bus). Here MSB is wire_2[0] and LSB is wire_2[10].
 
-    wire[10:0] wire_3; // wire data-type with width of 11-bits(bus). Here MSB is wire_3[10] and LSB is wire_1[0].
+    wire[10:0] wire_3; // wire data-type with width of 11 bits(bus). Here MSB is wire_3[10] and LSB is wire_1[0].
 
     reg[0:10] register_1; // register data-type with width of 11 bits. Here MSB is register_1[0] and LSB is register_1[10].
 
