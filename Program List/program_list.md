@@ -13,3 +13,4 @@ Program012: [This program helps to understand $monitor() and $display() in veril
 Program013: [This program helps to understand $stop and $finish in verilog.](../Program013/Program013.v)<br>
 Program014: [This program helps to understand 'define in verilog.](../Program014/Program014.v)<br>
 Program015: [This program helps to understand ports in verilog.](../Program015/Program015.v)<br>
+Program016: [This program helps to understand how to connect ports to external signals.](../Program016/Program016.v)<br>

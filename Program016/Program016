@@ -1,0 +1,46 @@
+#! /c/iverilog/bin/vvp
+:ivl_version "0.9.7 " "(v0_9_7)";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_01184968 .scope module, "external_module" "external_module" 2 19;
+ .timescale 0 0;
+v01182B98_0 .net "a", 0 0, C4<z>; 0 drivers
+v0118EE28_0 .var "c", 0 0;
+v0118EE80_0 .var "d", 0 0;
+S_010AA690 .scope module, "i_m_0" "internal_module" 2 31, 2 7, S_01184968;
+ .timescale 0 0;
+v01082868_0 .alias "A", 0 0, v01182B98_0;
+v01182A90_0 .var "B", 0 0;
+v01182AE8_0 .net "C", 0 0, v0118EE28_0; 1 drivers
+v01182B40_0 .net "D", 0 0, v0118EE80_0; 1 drivers
+S_011849F0 .scope module, "i_m_1" "internal_module" 2 34, 2 7, S_01184968;
+ .timescale 0 0;
+v01083F78_0 .alias "A", 0 0, v01182B98_0;
+v01082760_0 .var "B", 0 0;
+v010827B8_0 .alias "C", 0 0, v01182AE8_0;
+v01082810_0 .alias "D", 0 0, v01182B40_0;
+    .scope S_01184968;
+T_0 ;
+    %vpi_call 2 37 "$display", "i_m_0.A: %b", v01082868_0;
+    %vpi_call 2 38 "$display", "i_m_0.B: %b", v01182A90_0;
+    %vpi_call 2 39 "$display", "i_m_0.C: %b", v01182AE8_0;
+    %vpi_call 2 40 "$display", "i_m_0.D: %b\012", v01182B40_0;
+    %set/v v0118EE80_0, 1, 1;
+    %set/v v0118EE28_0, 1, 1;
+    %vpi_call 2 45 "$display", "i_m_0.A: %b", v01082868_0;
+    %vpi_call 2 46 "$display", "i_m_0.B: %b", v01182A90_0;
+    %vpi_call 2 47 "$display", "i_m_0.C: %b", v01182AE8_0;
+    %vpi_call 2 48 "$display", "i_m_0.D: %b\012", v01182B40_0;
+    %vpi_call 2 50 "$display", "i_m_1.A: %b", v01083F78_0;
+    %vpi_call 2 51 "$display", "i_m_1.B: %b", v01082760_0;
+    %vpi_call 2 52 "$display", "i_m_1.C: %b", v010827B8_0;
+    %vpi_call 2 53 "$display", "i_m_1.D: %b", v01082810_0;
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "Program016.v";
