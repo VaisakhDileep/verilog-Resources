@@ -42,6 +42,9 @@ module external_module();
         d = 1;
         c = 1;
 
+        $display("external_module.d: %b", external_module.d);
+        $display("external_module.c: %b\n", external_module.c); // We could have simply used 'd' and 'c' but there is no harm in using their hierarchial name.
+
         $display("i_m_0.A: %b", i_m_0.A);
         $display("i_m_0.B: %b", i_m_0.B);
         $display("i_m_0.C: %b", i_m_0.C);
