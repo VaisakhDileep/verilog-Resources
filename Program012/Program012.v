@@ -24,7 +24,7 @@ module understand_$monitor_$display_system_tasks();
         $display("string_1: %d", string_1); // Notice here that without formatting, the value will displayed in decimal.
 
         $display("string_1: %s\n", string_1);
-    // In order to understand the different format specifiers supported in $display refer: "format_specifiers_$_display".
+    // In order to understand the different format specifiers supported in $display refer: "format_specifiers_$display.png".
 
     // $monitor: Verilog provides a mechanism to monitor a signal when its value changes.
     // Syntax of monitor: $monitor(p1, p2, p3, ..., pm); // p1, p1, p3 can be variables, signal names or quoted strings.
