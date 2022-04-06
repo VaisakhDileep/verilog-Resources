@@ -39,7 +39,7 @@ The different and/or gate available are:
 
     and and_2(output_wire, input_wire_1, input_wire_2, input_wire_3); // Note here we have more than two inputs.
 
-    and (output_wire, input_wire_2, input_wire_3); // instance names need not be specified for primitives.
+    and(output_wire, input_wire_2, input_wire_3); // instance name need not be specified for primitives.
 
     // In order to understand the truth-table for the different and/or gates refer: "truth_table_and_or_gates.png".
 
