@@ -1,0 +1,23 @@
+#! /c/iverilog/bin/vvp
+:ivl_version "0.9.7 " "(v0_9_7)";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_01093E00 .scope module, "understand_bufif_notif_gate" "understand_bufif_notif_gate" 2 7;
+ .timescale 0 0;
+L_01093E88 .functor BUFIF0 1, C4<z>, C4<z>, C4<0>, C4<0>;
+L_010938A8 .functor BUFIF1 1, C4<z>, C4<z>, C4<0>, C4<0>;
+L_01093988 .functor NOTIF0 1, C4<z>, C4<z>, C4<0>, C4<0>;
+L_010939C0 .functor NOTIF1 1, C4<z>, C4<z>, C4<0>, C4<0>;
+L_01093950 .functor BUFIF0 1, C4<z>, C4<z>, C4<0>, C4<0>;
+v01092AC8_0 .net "control_wire", 0 0, C4<z>; 0 drivers
+v01092B20_0 .net "input_wire_1", 0 0, C4<z>; 0 drivers
+RS_010C18A4 .resolv tri, L_01093E88, L_010938A8, L_01093988, L_010939C0;
+v01092B78_0 .net8 "output_wire_1", 0 0, RS_010C18A4; 4 drivers, strength-aware
+v01092BD0_0 .net8 "output_wire_2", 0 0, L_01093950; 1 drivers, strength-aware
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "Program020.v";

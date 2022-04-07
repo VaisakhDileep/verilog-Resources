@@ -17,3 +17,4 @@ Program016: [This program helps to understand how to connect ports to external s
 Program017: [This program helps to understand how to display hierarchial names in verilog.](../Program017/Program017.v)<br>
 Program018: [This program helps to understand the and/or gates available in verilog.](../Program018/Program018.v)<br>
 Program019: [This program helps to understand the buf/not gates available in verilog.](../Program019/Program019.v)<br>
+Program020: [This program helps to understand bufif/notif gates available in verilog.](../Program020/Program020.v)<br>

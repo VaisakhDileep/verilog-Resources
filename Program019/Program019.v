@@ -20,7 +20,7 @@ The different buf/not gates available are:
 
     not not_1(output_wire_1, input_wire_1);
 
-    buf buf_2(output_wire_1, output_wire_2, input_wire_1); // Note here we have more than one output.
+    buf buf_2(output_wire_1, output_wire_2, input_wire_1); // Note here we have more than one output wires.
 
     buf(output_wire_2, input_wire_1); // instance name need not be specified for primitives.
 

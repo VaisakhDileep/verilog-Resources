@@ -37,7 +37,7 @@ The different and/or gate available are:
 
     xnor xnor_1(output_wire, input_wire_1, input_wire_2);
 
-    and and_2(output_wire, input_wire_1, input_wire_2, input_wire_3); // Note here we have more than two inputs.
+    and and_2(output_wire, input_wire_1, input_wire_2, input_wire_3); // Note here we have more than two input wires.
 
     and(output_wire, input_wire_2, input_wire_3); // instance name need not be specified for primitives.
 
