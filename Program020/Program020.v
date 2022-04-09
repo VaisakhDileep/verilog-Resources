@@ -31,5 +31,7 @@ The different bufif/notif gates available are:
     bufif0(output_wire_2, input_wire_1, control_wire); // instance names need not be specified for primitives.
 
     // In order to understand the truth-table for the different bufif/notif gates refer: "truth_table_bufif_notif_gates.png"
+    // In the truth-table 'L' stands for output having either '0' or 'z' value.
+    // In the truth-table 'H' stands for output having either '1' or 'z' value.
 
 endmodule
