@@ -19,3 +19,4 @@ Program018: [This program helps to understand the and/or gates available in veri
 Program019: [This program helps to understand the buf/not gates available in verilog.](../Program019/Program019.v)<br>
 Program020: [This program helps to understand bufif/notif gates available in verilog.](../Program020/Program020.v)<br>
 Program021: [This program helps to understand gate-delays in verilog.](../Program021/Program021.v)<br>
+Program022: [This program helps to understand continuous assignment in verilog.](../Program022/Program022.v)<br>

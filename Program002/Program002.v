@@ -42,13 +42,13 @@ Syntax for sized numbers:
         $display("number(decimal): %-d\n", number);
 
 /*
-Syntax for unsized numbers:
+Syntax for un-sized numbers:
     '<base format> <number>
 
 Note: Numbers without "<size>" specification have a default number of bits that is simulator(machine) specific(usually 32 bits).
 */
 
-        number = 2000; // defaultly it is treated as decimal.
+        number = 2000; // by default it is treated as decimal.
 
         $display("number(decimal): %-d\n", number);
 
@@ -64,7 +64,7 @@ Note: Numbers without "<size>" specification have a default number of bits that 
 
         $display("number(hexadecimal): %h\n", number);
 
-        number = -32'd2022; // Inorder to represent negative numbers we have to place '-' before "<size>" and not anywhere else.
+        number = -32'd2022; // In order to represent negative numbers we have to place '-' before "<size>" and not anywhere else.
         // number = 32'-d2022; // This will give an error.
         // number = 32'd-2022; // This will given an error.
 
