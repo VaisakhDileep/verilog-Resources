@@ -21,3 +21,4 @@ Program020: [This program helps to understand bufif/notif gates available in ver
 Program021: [This program helps to understand gate-delays in verilog.](../Program021/Program021.v)<br>
 Program022: [This program helps to understand continuous assignment in verilog.](../Program022/Program022.v)<br>
 Program023: [This program helps to understand implicit continuous assignment in verilog.](../Program023/Program023.v)<br>
+Program024: [This program helps to understand delays in continuous assignment in verilog.](../Program024/Program024.v)<br>

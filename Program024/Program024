@@ -1,0 +1,60 @@
+#! /c/iverilog/bin/vvp
+:ivl_version "0.9.7 " "(v0_9_7)";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_01083CE8 .scope module, "understand_delays_continuous_assignment" "understand_delays_continuous_assignment" 2 7;
+ .timescale 0 0;
+L_01249080/d .functor AND 2, v01083C08_0, v01242AE0_0, C4<11>, C4<11>;
+L_01249080 .delay (10,10,10) L_01249080/d;
+L_01242BE8/d .functor OR 2, v01242B38_0, v01242B90_0, C4<00>, C4<00>;
+L_01242BE8 .delay (10,10,10) L_01242BE8/d;
+L_012478C8 .functor XOR 2, v01247710_0, v01247768_0, C4<00>, C4<00>;
+v01083C08_0 .var "_2_bit_memory_1", 0 1;
+v01242AE0_0 .var "_2_bit_memory_2", 0 1;
+v01242B38_0 .var "_2_bit_memory_3", 0 1;
+v01242B90_0 .var "_2_bit_memory_4", 0 1;
+v01247710_0 .var "_2_bit_memory_5", 0 1;
+v01247768_0 .var "_2_bit_memory_6", 0 1;
+v012477C0_0 .net "result_1", 0 1, L_01249080; 1 drivers
+v01247818_0 .net "result_2", 0 1, L_01242BE8; 1 drivers
+v01247870_0 .net "result_3", 0 1, L_012478C8; 1 drivers
+    .scope S_01083CE8;
+T_0 ;
+    %movi 8, 2, 2;
+    %set/v v01083C08_0, 8, 2;
+    %set/v v01242AE0_0, 1, 2;
+    %delay 0, 0;
+    %vpi_call 2 45 "$display", "%b & %b: %b [time: %-2d]", v01083C08_0, v01242AE0_0, v012477C0_0, $time;
+    %delay 10, 0;
+    %vpi_call 2 47 "$display", "%b & %b: %b [time: %-2d]\012", v01083C08_0, v01242AE0_0, v012477C0_0, $time;
+    %set/v v01083C08_0, 1, 2;
+    %delay 2, 0;
+    %vpi_call 2 51 "$display", "%b & %b: %b [time: %-2d]\012", v01083C08_0, v01242AE0_0, v012477C0_0, $time;
+    %set/v v01083C08_0, 0, 2;
+    %delay 8, 0;
+    %vpi_call 2 55 "$display", "%b & %b: %b [time: %-2d]", v01083C08_0, v01242AE0_0, v012477C0_0, $time;
+    %delay 2, 0;
+    %vpi_call 2 57 "$display", "%b & %b: %b [time: %-2d]\012\012", v01083C08_0, v01242AE0_0, v012477C0_0, $time;
+    %delay 8, 0;
+    %movi 8, 2, 2;
+    %set/v v01242B38_0, 8, 2;
+    %movi 8, 1, 2;
+    %set/v v01242B90_0, 8, 2;
+    %delay 0, 0;
+    %vpi_call 2 65 "$display", "%b | %b: %b [time: %-2d]", v01242B38_0, v01242B90_0, v01247818_0, $time;
+    %delay 10, 0;
+    %vpi_call 2 67 "$display", "%b | %b: %b [time: %-2d]", v01242B38_0, v01242B90_0, v01247818_0, $time;
+    %movi 8, 2, 2;
+    %set/v v01247710_0, 8, 2;
+    %set/v v01247768_0, 0, 2;
+    %delay 10, 0;
+    %vpi_call 2 75 "$display", "%b ^ %b: %b [time: %-2d]", v01247710_0, v01247768_0, v01247870_0, $time;
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "Program024.v";
