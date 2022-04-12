@@ -11,7 +11,7 @@ Verilog supports 4 values:
 1. 0 -> Logic zero(false condition)
 2. 1 -> Logic one(true condition)
 3. x -> Unknown value
-4. z -> high impedence value(floating state)
+4. z -> high impedance value(floating state)
 */
 
     integer uninitialized_integer_variable; // uninitialized variables are usually initialized with 'x'.

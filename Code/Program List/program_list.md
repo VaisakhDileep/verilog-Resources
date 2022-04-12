@@ -24,3 +24,5 @@ Program023: [This program helps to understand implicit continuous assignment in 
 Program024: [This program helps to understand delays in continuous assignment in verilog.](../Program024/Program024.v)<br>
 Program025: [This program helps to understand expressions in verilog.](../Program025/Program025.v)<br>
 Program026: [This program helps to understand operands in verilog.](../Program026/Program026.v)<br>
+Program027: [This program helps to understand operators in verilog.](../Program027/Program027.v)<br>
+Program028: [This program helps to understand arithmetic operators in verilog.](../Program028/Program028.v)<br>

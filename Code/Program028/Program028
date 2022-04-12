@@ -1,0 +1,78 @@
+#! /c/iverilog/bin/vvp
+:ivl_version "0.9.7 " "(v0_9_7)";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_011A78E0 .scope module, "understand_arithmetic_operators" "understand_arithmetic_operators" 2 7;
+ .timescale 0 0;
+L_011AAB78 .functor BUFZ 4, v011AAAE0_0, C4<0000>, C4<0000>, C4<0000>;
+v011AB4F0_0 .net *"_s12", 3 0, C4<0000>; 1 drivers
+v011AB548_0 .net *"_s16", 4 0, C4<00000>; 1 drivers
+v011AB5A0_0 .net "addition_result", 0 3, L_010AFB98; 1 drivers
+v011A2AB0_0 .net "division_result", 0 3, L_010AFCF8; 1 drivers
+v011A2B08_0 .net "modulus_result", 0 3, L_010AFD50; 1 drivers
+v011A2B60_0 .net "multiplication_result", 0 5, L_010AF988; 1 drivers
+v011A2BB8_0 .var/i "negative_integer_operand_1", 31 0;
+v011AAA00_0 .net "negative_operand_1", 0 3, L_010AFB40; 1 drivers
+v011AAA58_0 .net "negative_padded_operand_1", 0 4, L_010AFC48; 1 drivers
+v011AAAE0_0 .var "operand_1", 0 3;
+v010AFE00_0 .var "operand_2", 0 3;
+v010AFBF0_0 .var "padded_operand_1", 0 4;
+v010AFFB8_0 .net "positive_operand_1", 0 3, L_011AAB78; 1 drivers
+v010AFF60_0 .net "subtraction_result", 0 3, L_010AFCA0; 1 drivers
+L_010AFB98 .arith/sum 4, v011AAAE0_0, v010AFE00_0;
+L_010AFCA0 .arith/sub 4, v011AAAE0_0, v010AFE00_0;
+L_010AF988 .arith/mult 6, v011AAAE0_0, v010AFE00_0;
+L_010AFCF8 .arith/div 4, v011AAAE0_0, v010AFE00_0;
+L_010AFD50 .arith/mod 4, v011AAAE0_0, v010AFE00_0;
+L_010AFB40 .arith/sub 4, C4<0000>, v011AAAE0_0;
+L_010AFC48 .arith/sub 5, C4<00000>, v010AFBF0_0;
+    .scope S_011A78E0;
+T_0 ;
+    %movi 8, 11, 4;
+    %set/v v011AAAE0_0, 8, 4;
+    %end;
+    .thread T_0;
+    .scope S_011A78E0;
+T_1 ;
+    %movi 8, 4, 4;
+    %set/v v010AFE00_0, 8, 4;
+    %end;
+    .thread T_1;
+    .scope S_011A78E0;
+T_2 ;
+    %movi 8, 11, 5;
+    %set/v v010AFBF0_0, 8, 5;
+    %end;
+    .thread T_2;
+    .scope S_011A78E0;
+T_3 ;
+    %movi 8, 4294967285, 32;
+    %set/v v011A2BB8_0, 8, 32;
+    %end;
+    .thread T_3;
+    .scope S_011A78E0;
+T_4 ;
+    %delay 0, 0;
+    %vpi_call 2 40 "$display", "%d + %d = %-d", v011AAAE0_0, v010AFE00_0, v011AB5A0_0;
+    %vpi_call 2 42 "$display", "%d - %d = %-d", v011AAAE0_0, v010AFE00_0, v010AFF60_0;
+    %vpi_call 2 44 "$display", "%d * %d = %-d", v011AAAE0_0, v010AFE00_0, v011A2B60_0;
+    %vpi_call 2 46 "$display", "%d / %d = %-d", v011AAAE0_0, v010AFE00_0, v011A2AB0_0;
+    %vpi_call 2 48 "$display", "%d %% %d = %-d\012", v011AAAE0_0, v010AFE00_0, v011A2B08_0;
+    %vpi_call 2 50 "$display", "positive_operand_1: %-d\012", v010AFFB8_0;
+    %vpi_call 2 52 "$display", "negative_operand_1: %-d", v011AAA00_0;
+    %vpi_call 2 53 "$display", "negative_operand_1: %b\012", v011AAA00_0;
+    %vpi_call 2 55 "$display", "negative_padded_operand_1: %-d", v011AAA58_0;
+    %vpi_call 2 56 "$display", "negative_padded_operand_1: %b\012", v011AAA58_0;
+    %vpi_call 2 58 "$display", "negative_integer_operand_1: %-d", v011A2BB8_0;
+    %vpi_call 2 59 "$display", "negative_integer_operand_1: %b\012", v011A2BB8_0;
+    %vpi_call 2 61 "$display", "-10 / 5   = %d", 2'sb10;
+    %vpi_call 2 62 "$display", "-'d10 / 5 = %d", 31'b0110011001100110011001100110001;
+    %end;
+    .thread T_4;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "Program028.v";

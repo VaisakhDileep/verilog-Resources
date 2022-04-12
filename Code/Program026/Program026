@@ -1,0 +1,17 @@
+#! /c/iverilog/bin/vvp
+:ivl_version "0.9.7 " "(v0_9_7)";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_01154A70 .scope module, "understand_operands" "understand_operands" 2 7;
+ .timescale 0 0;
+v01152F08_0 .net "A", 0 0, C4<z>; 0 drivers
+v01153E10_0 .net "B", 0 0, C4<z>; 0 drivers
+v01153E68_0 .net "result", 0 0, L_01152AF8; 1 drivers
+L_01152AF8 .arith/sum 1, C4<z>, C4<z>;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "Program026.v";
