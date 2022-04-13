@@ -26,3 +26,4 @@ Program025: [This program helps to understand expressions in verilog.](../Progra
 Program026: [This program helps to understand operands in verilog.](../Program026/Program026.v)<br>
 Program027: [This program helps to understand operators in verilog.](../Program027/Program027.v)<br>
 Program028: [This program helps to understand arithmetic operators in verilog.](../Program028/Program028.v)<br>
+Program029: [This program helps to understand logical operators in verilog.](../Program029/Program029.v)<br>

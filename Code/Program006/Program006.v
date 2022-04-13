@@ -10,18 +10,26 @@ module understand_registers();
 
 // Note: Unlike in real-circuits, the term register merely means a variable that can hold a value. Verilog registers do not need a clock as hardware registers do.
 
-    reg register;
+    reg register_1;
+
+    // reg register_2 = x; // Even though registers are by default assigned to 'x', we cannot manually initialize to 'x'.
+
+    // reg register_3 = z; // We cannot initialize register to 'z'.
 
     initial begin
-        $display("register: %d", register); // By default registers have value 'x'.
+        $display("register_1: %d", register_1); // By default registers have value 'x'.
 
-        register = 1'b1;
+        register_1 = 1'b1;
 
-        $display("register: %d", register);
+        // register_1 = x; // We cannot assign 'x' to a register variable.
 
-        register = 1'b0;
+        // register_1 = z; // We cannot assign 'z' to a register variable.
 
-        $display("register: %d", register);
+        $display("register_1: %d", register_1);
+
+        register_1 = 1'b0;
+
+        $display("register: %d", register_1);
     end
 
 endmodule

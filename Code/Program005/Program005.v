@@ -18,6 +18,8 @@ module understand_nets();
 
     wire wire_4 = 1'b1; // This wire is fixed to logic value '1' at declaration.
 
+    wire wire_5 = x;
+
     initial begin
         // wire_1 = 1; // This will given an error, we cannot assign values to a wire(it has to be from a driver).
 
@@ -28,6 +30,8 @@ module understand_nets();
         $display("wire_3: %b", wire_3);
 
         $display("wire_4: %b", wire_4);
+
+        $display("wire_5: %b", wire_5); // Even though we have initialized "wire_5" with 'x', we get the output as 'z'.
 
         $finish;
     end
