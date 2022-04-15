@@ -10,6 +10,8 @@ module understand_equality_operators();
 
 // These operators compare the two operands bit by bit, with zero filling if the operands are of unequal length.
 
+// Note: If one of the operand is shorter than the other one it is bit extended.
+
 /*
 1. '==' operator -> possible logical value {0, 1, x}.
     result is unknown('x'), if 'x' or 'z' is present in one of the operands.
