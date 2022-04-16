@@ -12,12 +12,13 @@ module understand_vectors();
     wire wire_1; // wire data-type with width 1-bit(scalar value).
 
     wire[0:10] wire_2; // wire data-type with width of 11 bits(bus). Here MSB is wire_2[0] and LSB is wire_2[10].
-
     wire[10:0] wire_3; // wire data-type with width of 11 bits(bus). Here MSB is wire_3[10] and LSB is wire_1[0].
 
     reg[0:10] register_1; // register data-type with width of 11 bits. Here MSB is register_1[0] and LSB is register_1[10].
-
     reg[10:0] register_2; // register data-type with width of 11 bits. Here MSB is register_2[10] and LSB is register_2[0].
+
+    reg[0:4] register_3 = 'b11000;
+    reg[4:0] register_4 = 'b11000;
 
     initial begin
 
@@ -34,7 +35,10 @@ module understand_vectors();
         register_2[0] = 1;
 
         $display("register_1: %b", register_1);
-        $display("register_2: %b", register_2); // Notice here we are getting different outputs(for "register_1" MSB is at index '0' whereas for "register_2" MSB is at index '10').
+        $display("register_2: %b\n", register_2); // Notice here we are getting different outputs(for "register_1" MSB is at index '0' whereas for "register_2" MSB is at index '10').
+
+        $display("register_3[0:2]: %b", register_3[0:2]);
+        $display("register_4[4:2]: %b", register_4[4:2]);
 
         $finish;
     end
