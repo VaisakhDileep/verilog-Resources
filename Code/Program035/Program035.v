@@ -47,11 +47,15 @@ module understand_concatenation_operator();
         // concatenation_result_3 = {'b10, operand_reg_vec_1}; // This will give an error since "'b10" is an un-sized constant.
         concatenation_result_3 = {2'b10, operand_reg_vec_1};
 
-        $display("{%b , %b} = %b", 2'b10, operand_reg_vec_1, concatenation_result_3);
+        $display("{%b , %b} = %b\n", 2'b10, operand_reg_vec_1, concatenation_result_3);
 
         concatenation_result_4 = {operand_reg_vec_1, operand_wire_vec_1[2:4]};
 
-        $display("{%b, %b} = %b", operand_reg_vec_1, operand_wire_vec_1[2:4], concatenation_result_4);
+        $display("{%b, %b} = %b\n", operand_reg_vec_1, operand_wire_vec_1[2:4], concatenation_result_4);
+
+        concatenation_result_2 = {operand_reg_vec_1, operand_wire_vec_1[2:4], 2'b11}; // We can concatenate more than two operands at a time.
+
+        $display("{%b, %b, %b} = %b", operand_reg_vec_1, operand_wire_vec_1[2:4], 2'b11, concatenation_result_2);
     end
 
 endmodule

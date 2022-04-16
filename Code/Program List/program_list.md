@@ -33,3 +33,4 @@ Program032: [This program helps to understand bitwise operators in verilog.](../
 Program033: [This program helps to understand reduction operators in verilog.](../Program033/Program033.v)<br>
 Program034: [This program helps to understand shift operators in verilog.](../Program034/Program034.v)<br>
 Program035: [This program helps to understand concatenation operator in verilog.](../Program035/Program035.v)<br>
+Program036: [This program helps to understand replication operator in verilog.](../Program036/Program036.v)<br>
