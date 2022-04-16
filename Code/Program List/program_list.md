@@ -31,3 +31,4 @@ Program030: [This program helps to understand relational operators in verilog.](
 Program031: [This program helps to understand equality operators in verilog.](../Program031/Program031.v)<br>
 Program032: [This program helps to understand bitwise operators in verilog.](../Program032/Program032.v)<br>
 Program033: [This program helps to understand reduction operators in verilog.](../Program033/Program033.v)<br>
+Program034: [This program helps to understand shift operators in verilog.](../Program034/Program034.v)<br>

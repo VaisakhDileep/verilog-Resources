@@ -15,7 +15,7 @@ module understand_reduction_operators();
 
     reg[0:4] operand_1 = 'b10010;
 
-    wire[0:4] operand_2 = 'b0111;
+    wire[0:4] operand_2 = 'b01110;
 
     initial begin
         $display("&%b = %b", operand_1, &operand_1); // Result is computed as "0 & 1 & 0 & 0 & 1".
