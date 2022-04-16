@@ -1,0 +1,61 @@
+#! /c/iverilog/bin/vvp
+:ivl_version "0.9.7 " "(v0_9_7)";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_010E2FC0 .scope module, "understand_concatenation_operator" "understand_concatenation_operator" 2 7;
+ .timescale 0 0;
+v010E32D0_0 .var "concatenation_result_1", 0 5;
+v010E3048_0 .var "concatenation_result_2", 0 9;
+v010A2B08_0 .var "concatenation_result_3", 0 6;
+v010A2B60_0 .var "concatenation_result_4", 0 7;
+v010A2BB8_0 .var "operand_reg_1", 0 0;
+v010E34D8_0 .var "operand_reg_vec_1", 0 4;
+v010E3530_0 .net "operand_wire_1", 0 0, C4<0>; 1 drivers
+v010E3588_0 .net "operand_wire_vec_1", 0 4, C4<00011>; 1 drivers
+    .scope S_010E2FC0;
+T_0 ;
+    %set/v v010A2BB8_0, 1, 1;
+    %end;
+    .thread T_0;
+    .scope S_010E2FC0;
+T_1 ;
+    %movi 8, 24, 5;
+    %set/v v010E34D8_0, 8, 5;
+    %end;
+    .thread T_1;
+    .scope S_010E2FC0;
+T_2 ;
+    %load/v 8, v010E34D8_0, 5;
+    %load/v 13, v010A2BB8_0, 1;
+    %set/v v010E32D0_0, 8, 6;
+    %vpi_call 2 32 "$display", "{%b, %b} = %b", v010A2BB8_0, v010E34D8_0, v010E32D0_0;
+    %load/v 8, v010A2BB8_0, 1;
+    %load/v 9, v010E34D8_0, 5;
+    %set/v v010E32D0_0, 8, 6;
+    %vpi_call 2 36 "$display", "{%b, %b} = %b\012", v010E34D8_0, v010A2BB8_0, v010E32D0_0;
+    %load/v 8, v010E3530_0, 1;
+    %load/v 9, v010E3588_0, 5;
+    %set/v v010E32D0_0, 8, 6;
+    %vpi_call 2 40 "$display", "{%b, %b} = %b\012", v010E3588_0, v010E3530_0, v010E32D0_0;
+    %load/v 8, v010E34D8_0, 5;
+    %load/v 13, v010E3588_0, 5;
+    %set/v v010E3048_0, 8, 10;
+    %vpi_call 2 44 "$display", "{%b, %b} = %b\012", v010E3588_0, v010E34D8_0, v010E3048_0;
+    %load/v 8, v010E34D8_0, 5;
+    %movi 15, 2, 2;
+    %mov 13, 15, 2;
+    %set/v v010A2B08_0, 8, 7;
+    %vpi_call 2 50 "$display", "{%b , %b} = %b", 2'b10, v010E34D8_0, v010A2B08_0;
+    %load/v 8, v010E3588_0, 3; Select 3 out of 5 bits
+    %load/v 11, v010E34D8_0, 5;
+    %set/v v010A2B60_0, 8, 8;
+    %vpi_call 2 54 "$display", "{%b, %b} = %b", v010E34D8_0, &PV<v010E3588_0, 0, 3>, v010A2B60_0;
+    %end;
+    .thread T_2;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "Program035.v";
