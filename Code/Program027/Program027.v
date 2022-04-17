@@ -21,7 +21,9 @@ The different types of operators are:
 9. Conditional operator
 */
 
-// In order to understand the different operators refer: "different_types_of_operators.png"
+// In order to understand the different operators refer: "different_types_of_operators.png".
+
+// In order to understand the precedence of the different operators refer: "operator_precedence.png".
 
     reg operand_1, operand_2;
 
