@@ -36,3 +36,4 @@ Program035: [This program helps to understand concatenation operator in verilog.
 Program036: [This program helps to understand replication operator in verilog.](../Program036/Program036.v)<br>
 Program037: [This program helps to understand conditional operator in verilog.](../Program037/Program037.v)<br>
 Program038: [This program helps to understand initial statement in verilog.](../Program038/Program038.v)<br>
+Program039: [This program helps to understand always statement in verilog.](../Program039/Program039.v)<br>
