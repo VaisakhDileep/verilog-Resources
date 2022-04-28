@@ -62,13 +62,14 @@ The left-hand side of a procedural assignment can be one of the following:
 
         $display("variable_4 = %b {time -> %-3d}\n", variable_4, $time);
     // Demonstrating non-blocking assignment
+// Note: Typically non-blocking statements are execute last in the given time step they are scheduled(after all the blocking statements in the time step are completed).
         current_time = $time;
 
         variable_1 <= #1 0;
 
         $display("variable_1 = %b {time -> %-3d}", variable_1, $time - current_time);
 
-        variable_2 <= #1 0;
+        variable_2 <= #1 0; // Notice here that "variable_1" and "variable_2" gets updated at the same time-step, but the statement in between them gets executed in a different time-step.
 
         $display("variable_2 = %b {time -> %-3d}", variable_2, $time - current_time);
 
@@ -80,6 +81,8 @@ The left-hand side of a procedural assignment can be one of the following:
         variable_4 = 1; // Notice here there is no delay.
 
         $display("variable_4 = %b {time -> %-3d}\n", variable_4, $time - current_time);
+
+        #1 $display("variable_1 = %b\n", variable_1); // Notice here this is not updated, this is because "variable_1" is updated by a non-blocking assignment statement and this will be executed only after all the blocking statements in the time-step gets executed(in this case "$display()").
 
         $monitor("variable_1 = %b {time -> %-3d}", variable_1, $time);
     end
