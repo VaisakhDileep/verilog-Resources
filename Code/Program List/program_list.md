@@ -19,6 +19,7 @@ Program018: [This program helps to understand the and/or gates available in veri
 Program019: [This program helps to understand the buf/not gates available in verilog.](../Program019/Program019.v)<br>
 Program020: [This program helps to understand bufif/notif gates available in verilog.](../Program020/Program020.v)<br>
 Program021: [This program helps to understand gate-delays in verilog.](../Program021/Program021.v)<br>
+Program043: [This program helps to understand min/typ/max values in gate-delays in verilog.](../Program043/Program043.v)<br>
 Program022: [This program helps to understand continuous assignment in verilog.](../Program022/Program022.v)<br>
 Program023: [This program helps to understand implicit continuous assignment in verilog.](../Program023/Program023.v)<br>
 Program024: [This program helps to understand delays in continuous assignment in verilog.](../Program024/Program024.v)<br>
@@ -39,3 +40,4 @@ Program038: [This program helps to understand initial statement in verilog.](../
 Program039: [This program helps to understand always statement in verilog.](../Program039/Program039.v)<br>
 Program040: [This program helps to understand procedural assignment in verilog.](../Program040/Program040.v)<br>
 Program041: [This program demonstrates the different applications of blocking and non-blocking procedural assignment in verilog.](../Program041/Program041.v)<br>
+Program042: [This program helps to understand delay-based timing control in verilog.](../Program042/Program042.v)<br>
