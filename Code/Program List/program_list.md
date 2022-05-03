@@ -42,3 +42,4 @@ Program040: [This program helps to understand procedural assignment in verilog.]
 Program041: [This program demonstrates the different applications of blocking and non-blocking procedural assignment in verilog.](../Program041/Program041.v)<br>
 Program042: [This program helps to understand delay-based timing control in verilog.](../Program042/Program042.v)<br>
 Program044: [This program helps to understand event-based timing control in verilog.](../Program044/Program044.v)<br>
+Program045: [This program helps to understand conditional statements in verilog.](../Program045/Program045.v)<br>
