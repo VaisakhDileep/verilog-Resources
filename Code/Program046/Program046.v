@@ -35,6 +35,7 @@ endcase
             2'b01: $display("2'b01");
             2'b10: $display("2'b10");
             2'b11: $display("2'b11");
+
             2'bx0: $display("2'bx0");
             2'bx1: $display("2'bx1");
             2'b0x: $display("2'b0x");
