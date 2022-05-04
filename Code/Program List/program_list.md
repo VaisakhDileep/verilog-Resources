@@ -43,3 +43,5 @@ Program041: [This program demonstrates the different applications of blocking an
 Program042: [This program helps to understand delay-based timing control in verilog.](../Program042/Program042.v)<br>
 Program044: [This program helps to understand event-based timing control in verilog.](../Program044/Program044.v)<br>
 Program045: [This program helps to understand conditional statements in verilog.](../Program045/Program045.v)<br>
+Program046: [This program helps to understand multiway branching(case statement) in verilog.](../Program046/Program046.v)<br>
+Program047: [This program helps to understand casex and casez statement in verilog.](../Program047/Program047.v)<br>
