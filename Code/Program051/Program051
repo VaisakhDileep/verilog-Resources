@@ -1,0 +1,35 @@
+#! /c/iverilog/bin/vvp
+:ivl_version "0.9.7 " "(v0_9_7)";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_01092B68 .scope module, "understand_forever_loop" "understand_forever_loop" 2 7;
+ .timescale 0 0;
+v01092BF0_0 .var "clock", 0 0;
+    .scope S_01092B68;
+T_0 ;
+    %set/v v01092BF0_0, 0, 1;
+    %end;
+    .thread T_0;
+    .scope S_01092B68;
+T_1 ;
+T_1.0 ;
+    %delay 1, 0;
+    %load/v 8, v01092BF0_0, 1;
+    %inv 8, 1;
+    %set/v v01092BF0_0, 8, 1;
+    %jmp T_1.0;
+    %end;
+    .thread T_1;
+    .scope S_01092B68;
+T_2 ;
+    %delay 1, 0;
+    %vpi_call 2 23 "$display", "clock: %b", v01092BF0_0;
+    %end;
+    .thread T_2;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "Program051.v";

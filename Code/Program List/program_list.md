@@ -48,3 +48,4 @@ Program047: [This program helps to understand casex and casez statement in veril
 Program048: [This program helps to understand while loop in verilog.](../Program048/Program048.v)<br>
 Program049: [This program helps to understand for loop in verilog.](../Program049/Program049.v)<br>
 Program050: [This program helps to understand repeat loop in verilog.](../Program050/Program050.v)<br>
+Program051: [This program helps to understand forever loop in verilog.](../Program051/Program051.v)<br>
