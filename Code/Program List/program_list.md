@@ -46,3 +46,4 @@ Program045: [This program helps to understand conditional statements in verilog.
 Program046: [This program helps to understand multiway branching(case statement) in verilog.](../Program046/Program046.v)<br>
 Program047: [This program helps to understand casex and casez statement in verilog.](../Program047/Program047.v)<br>
 Program048: [This program helps to understand while loop in verilog.](../Program048/Program048.v)<br>
+Program049: [This program helps to understand for loop in verilog.](../Program049/Program049.v)<br>
