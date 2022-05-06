@@ -16,13 +16,13 @@ Properties of sequential blocks:
 */
 
     initial begin
-        $display("1st");
+        $display("1st {time -> %-2d}", $time);
 
-        $display("2nd");
+        $display("2nd {time -> %-2d}", $time);
 
-        #1 $display("3rd");
+        #1 $display("3rd {time -> %-2d}", $time);
 
-        $display("4th");
+        $display("4th {time -> %-2d}", $time);
     end
 
 endmodule
