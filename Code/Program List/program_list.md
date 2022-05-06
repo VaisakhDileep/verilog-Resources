@@ -49,3 +49,4 @@ Program048: [This program helps to understand while loop in verilog.](../Program
 Program049: [This program helps to understand for loop in verilog.](../Program049/Program049.v)<br>
 Program050: [This program helps to understand repeat loop in verilog.](../Program050/Program050.v)<br>
 Program051: [This program helps to understand forever loop in verilog.](../Program051/Program051.v)<br>
+Program052: [This program helps to understand sequential block in verilog.](../Program052/Program052.v)<br>
