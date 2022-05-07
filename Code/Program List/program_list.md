@@ -51,3 +51,4 @@ Program050: [This program helps to understand repeat loop in verilog.](../Progra
 Program051: [This program helps to understand forever loop in verilog.](../Program051/Program051.v)<br>
 Program052: [This program helps to understand sequential block in verilog.](../Program052/Program052.v)<br>
 Program053: [This program helps to understand parallel block in verilog.](../Program053/Program053.v)<br>
+Program054: [This program helps to understand nested blocks in verilog.](../Program054/Program054.v)<br>

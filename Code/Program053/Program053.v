@@ -9,6 +9,8 @@ module understand_parallel_block();
 // Parallel blocks are specified by the keyword "fork" and "join"
 
 // Note: Unlike sequential blocks, all statements in the parallel block start at the same time when the block is entered. Thus the order in which the statements are written in the block are not important.
+// Note: The keyword "fork" can be viewed as splitting a single flow into independent flows.
+// Note: The keyword "join" can be seen as joining the independent flows back into a single flow.
 
 /*
 Properties of parallel blocks:
