@@ -28,8 +28,8 @@ module external_module();
 
     reg c, d;
 
-    internal_module i_m_0(a, , c, d); // When instantiating a module, we don't necessarily need to provide all the ports. Some ports might be for debugging process, so we can skip them.
-                                      // When instantiating like this we need know the order properly(we have to preserve the order by adding empty ports).
+    internal_module i_m_0(a, , c, d); // When instantiating a module, we don't necessarily have to provide all the ports. Some ports might be for debugging process, so we can skip them.
+                                      // When instantiating like this we need to know the order properly(we have to preserve the order by adding empty ports).
 
     internal_module i_m_1(.D(d), .C(c), .A(a)); // We can specify the ports in any order, as long as we link it to ports in the internal module(This is a better approach since we don't have to learn the order).
 

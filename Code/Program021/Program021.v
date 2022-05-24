@@ -22,7 +22,7 @@ There are three types of delays from inputs to output for a primitive gate:
 Syntax for representing delays:
 1. and #(delay_time) and_1(output_wire, input_wire_1, input_wire_2); // if only one delay is specified, this value is used for all transitions.
 2. and #(rise_delay_value, fall_delay_value) and_1(output_wire, input_wire_1, input_wire_2) // if two delays are specified, they refer to the rise and the fall-delay values. The turn_off-delay value will be the minimum of the two delays.
-3. and #(rise_delay_value, fall_delay_value, turn_off_delay_value) and_1(output_wire, input_wire_1, input_wire_2) // if all the three delays are specified, they refer to rise, fall and turn_off- delay values respectfully.
+3. and #(rise_delay_value, fall_delay_value, turn_off_delay_value) and_1(output_wire, input_wire_1, input_wire_2) // if all the three delays are specified, they refer to rise, fall and turn_off-delay values respectfully.
 */
 
     reg input_reg_1 = 1, input_reg_2 = 1;

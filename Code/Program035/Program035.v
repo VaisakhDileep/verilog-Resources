@@ -39,7 +39,7 @@ module understand_concatenation_operator();
 
         $display("{%b, %b} = %b\n", operand_wire_vec_1, operand_wire_1, concatenation_result_1);
 
-        concatenation_result_2 = {operand_wire_vec_1, operand_reg_vec_1};
+        concatenation_result_2 = {operand_wire_vec_1, operand_reg_vec_1}; // We can concatenate a wire and a register vector.
 
         $display("{%b, %b} = %b\n", operand_wire_vec_1, operand_reg_vec_1, concatenation_result_2);
 

@@ -14,7 +14,7 @@ module understand_continuous_assignment();
 Syntax for continuous assignment:
     assign <drive_strength> <delay> <list_of_arguments> = RHS_expression;
 Here,
-    <drive_strength> and <delay> are optional. <drive_strength> by default is "strong1" or "string0".
+    <drive_strength> and <delay> are optional. <drive_strength> by default is "strong1" or "strong0".
 */
 
 /*

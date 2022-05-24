@@ -78,7 +78,7 @@ There are three types of delay control for procedural assignments:
 // Note: If there are multiple zero delay statements, the order between them is non-deterministic.
 
     initial begin
-        #0 reg_value_3 = 1; // Here adding "#0" at the right side of the equation will make the statement zero-delay, this means that in the same time-unit, this statement will be executed last.
+        #0 reg_value_3 = 1; // Here adding "#0" at the left side of the equation will make the statement zero-delay, this means that in the same time-unit, this statement will be executed last.
         #0 reg_value_4 = 1;
     
         #101 $display("@1\nreg_value_3 = %d\nreg_value_4 = %d", reg_value_3, reg_value_4);

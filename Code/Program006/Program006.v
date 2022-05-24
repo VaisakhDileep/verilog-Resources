@@ -29,7 +29,7 @@ module understand_registers();
 
         register_1 = 1'b0;
 
-        $display("register: %d", register_1);
+        $display("register_1: %d", register_1);
     end
 
 endmodule

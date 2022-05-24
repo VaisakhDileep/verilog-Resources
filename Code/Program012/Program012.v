@@ -29,7 +29,7 @@ module understand_$monitor_$display_system_tasks();
     // $monitor: Verilog provides a mechanism to monitor a signal when its value changes.
     // Syntax of monitor: $monitor(p1, p2, p3, ..., pm); // p1, p1, p3 can be variables, signal names or quoted strings.
 
-    // Note: $monitor() continuously monitors the value of the variables or signals specified in the parameter list and displays all hte parameters in the list whenever the value of any one variable or signal changes.
+    // Note: $monitor() continuously monitors the value of the variables or signals specified in the parameter list and displays all the parameters in the list whenever the value of any one variable or signal changes.
     // Note: Unlike $display(), $monitor() only needs to be invoked once.
     // Note: Only one monitoring function can be active at a time. If there is more than one $monitor() function, the last $monitor() function will be the active function.
     // Note: $monitor() starts executing from simulation time '0'.

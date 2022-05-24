@@ -22,6 +22,15 @@ module understand_forever_loop();
 
     initial begin
         #1 $display("clock: %b", clock);
+        #1 $display("clock: %b", clock);
+        #1 $display("clock: %b", clock);
+        #1 $display("clock: %b", clock);
+        #1 $display("clock: %b", clock);
+        #1 $display("clock: %b", clock);
+        #1 $display("clock: %b", clock);
+        #1 $display("clock: %b", clock);
+        #1 $display("clock: %b", clock);
+        #1 $display("clock: %b", clock);
     end
 
 endmodule

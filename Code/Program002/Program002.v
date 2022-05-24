@@ -22,7 +22,7 @@ Syntax for sized numbers:
         <number> can be consecutive digits from 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a(A), b(B), c(C), d(D), e(E), f(F).
 */
 
-        number = 2'b11; // This is a 6-bit binary number.
+        number = 2'b11; // This is a 2-bit binary number.
 
         $display("number(decimal): %-d", number); // display in decimal format. '-' will left-align the output.
         $display("number(binary) : %b\n", number); // display in binary format.

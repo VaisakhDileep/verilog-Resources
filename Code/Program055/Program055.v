@@ -25,7 +25,7 @@ Features of named blocks:
     end
 
     initial begin
-        #2 block_1.integer_variable = 20; // We can access the lock variable in "block_1" by using the hierarchial name referencing.
+        #2 block_1.integer_variable = 20; // We can access the lock variable in "block_1" by using hierarchial name referencing.
     end
 
 endmodule

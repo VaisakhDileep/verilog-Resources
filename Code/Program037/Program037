@@ -4,20 +4,20 @@
 :vpi_module "system";
 :vpi_module "v2005_math";
 :vpi_module "va_math";
-S_01112BF0 .scope module, "understand_conditional_operator" "understand_conditional_operator" 2 7;
+S_010B2B98 .scope module, "understand_conditional_operator" "understand_conditional_operator" 2 7;
  .timescale 0 0;
-v01113C28_0 .var "control_1", 0 0;
-v01118388_0 .var "control_2", 0 0;
-v011183E0_0 .var "result_1", 0 0;
-v01119968_0 .var "result_2", 0 4;
-    .scope S_01112BF0;
+v010B77F0_0 .var "control_1", 0 0;
+v010B9320_0 .var "control_2", 0 0;
+v010B9378_0 .var "result_1", 0 0;
+v010B93D0_0 .var "result_2", 0 4;
+    .scope S_010B2B98;
 T_0 ;
-    %set/v v01113C28_0, 1, 1;
+    %set/v v010B77F0_0, 1, 1;
     %end;
     .thread T_0;
-    .scope S_01112BF0;
+    .scope S_010B2B98;
 T_1 ;
-    %load/v 8, v01113C28_0, 1;
+    %load/v 8, v010B77F0_0, 1;
     %mov 9, 0, 2;
     %cmpi/u 8, 1, 3;
     %mov 8, 4, 1;
@@ -32,9 +32,9 @@ T_1.0 ; End of true expr.
 T_1.1 ;
     %mov 9, 1, 1; Return false value
 T_1.2 ;
-    %set/v v011183E0_0, 9, 1;
-    %vpi_call 2 27 "$display", "(control_1 == 1) ? 0 : 1 = %b\012", v011183E0_0;
-    %load/v 8, v01118388_0, 1;
+    %set/v v010B9378_0, 9, 1;
+    %vpi_call 2 27 "$display", "(control_1 == 1) ? 0 : 1 = %b\012", v010B9378_0;
+    %load/v 8, v010B9320_0, 1;
     %jmp/0  T_1.3, 8;
     %movi 9, 13, 5;
     %jmp/1  T_1.5, 8;
@@ -47,10 +47,10 @@ T_1.3 ; End of true expr.
 T_1.4 ;
     %mov 9, 14, 5; Return false value
 T_1.5 ;
-    %set/v v01119968_0, 9, 5;
-    %vpi_call 2 31 "$display", "(control_2) ? 5'b01101 : 5'b10100 = %b\012", v01119968_0;
-    %set/v v01118388_0, 0, 1;
-    %load/v 8, v01118388_0, 1;
+    %set/v v010B93D0_0, 9, 5;
+    %vpi_call 2 31 "$display", "(control_2) ? 5'b01101 : 5'b10100 = %b\012", v010B93D0_0;
+    %set/v v010B9320_0, 0, 1;
+    %load/v 8, v010B9320_0, 1;
     %mov 9, 0, 2;
     %cmpi/u 8, 1, 3;
     %mov 8, 4, 1;
@@ -58,7 +58,7 @@ T_1.5 ;
     %mov 9, 0, 5;
     %jmp/1  T_1.8, 8;
 T_1.6 ; End of true expr.
-    %load/v 14, v01113C28_0, 1;
+    %load/v 14, v010B77F0_0, 1;
     %mov 15, 0, 2;
     %cmpi/u 14, 1, 3;
     %mov 14, 4, 1;
@@ -81,8 +81,8 @@ T_1.11 ;
 T_1.7 ;
     %mov 9, 15, 5; Return false value
 T_1.8 ;
-    %set/v v01119968_0, 9, 5;
-    %vpi_call 2 37 "$display", "(control_2 == 1) ? 5'b00000 : ((control_1 == 1) ? 5'b11111 : 5'b01010) = %b", v01119968_0;
+    %set/v v010B93D0_0, 9, 5;
+    %vpi_call 2 37 "$display", "(control_2 == 1) ? 5'b00000 : ((control_1 == 1) ? 5'b11111 : 5'b01010) = %b", v010B93D0_0;
     %end;
     .thread T_1;
 # The file index is used to find the file name in the following table.

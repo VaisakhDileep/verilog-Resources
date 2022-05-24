@@ -4,9 +4,9 @@
 :vpi_module "system";
 :vpi_module "v2005_math";
 :vpi_module "va_math";
-S_01242B98 .scope module, "understand_sequential_block" "understand_sequential_block" 2 7;
+S_011D3688 .scope module, "understand_sequential_block" "understand_sequential_block" 2 7;
  .timescale 0 0;
-    .scope S_01242B98;
+    .scope S_011D3688;
 T_0 ;
     %vpi_call 2 19 "$display", "1st {time -> %-2d}", $time;
     %vpi_call 2 21 "$display", "2nd {time -> %-2d}", $time;

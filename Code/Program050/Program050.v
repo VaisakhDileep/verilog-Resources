@@ -14,7 +14,7 @@ module understand_repeat_loop();
     integer counter = 10;
 
     initial begin
-        repeat(counter) begin
+        repeat(20) begin
             $display("%-d", counter);
 
             counter = counter - 1;

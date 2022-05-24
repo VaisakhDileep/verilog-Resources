@@ -6,7 +6,7 @@ Description : This program helps to understand 'define in verilog.
 
 module understand_define();
 
-// Verilog provides compiler derivatives that are instructions to teh verilog compiler.
+// Verilog provides compiler derivatives that are instructions to the verilog compiler.
 
 // 'define: It is used to define text macros in verilog. It is similar to #define in C.
 // Note: The defined constants or text macros are used in verilog code by preceding them with '`'.

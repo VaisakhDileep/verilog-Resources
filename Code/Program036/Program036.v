@@ -21,7 +21,7 @@ module understand_replication_operator();
 
         replication_result_2 = {2{operand_reg_1}}; // This will repeat "operand_reg_1" '2' times.
 
-        $display("{2{%b}} = %b", operand_reg_1, replication_result_2);
+        $display("{2{%b}} = %b\n", operand_reg_1, replication_result_2);
 
         replication_result_3 = {2'b11, {2{operand_reg_1}}}; // When using multiple operands, enclose the replication operator by braces('{}').
 

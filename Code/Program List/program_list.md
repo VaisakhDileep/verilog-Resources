@@ -54,3 +54,5 @@ Program053: [This program helps to understand parallel block in verilog.](../Pro
 Program054: [This program helps to understand nested blocks in verilog.](../Program054/Program054.v)<br>
 Program055: [This program helps to understand named blocks in verilog.](../Program055/Program055.v)<br>
 Program056: [This program helps to understand disable keyword in verilog.](../Program056/Program056.v)<br>
+Program057: [This program helps to understand tasks in verilog.](../Program057/Program057.v)<br>
+Program058: [This program helps to understand functions in verilog.](../Program058/Program058.v)<br>

@@ -10,7 +10,7 @@ module understand_integer_real_time_register_data_type();
 
     integer counter; // counting is one of the application of "integer".
 
-// Real numbers constants and real register data types are declared with the keyword real. They can be specified in decimal notation or in scientific notation. Their default value is 0.
+// Real numbers constants and real register data types are declared with the keyword real. They can be specified in decimal notation or in scientific notation. Their default value is '0'.
 
     real real_value_1 = 1.2;
     real real_value_2 = 1.8;
@@ -19,7 +19,7 @@ module understand_integer_real_time_register_data_type();
     integer real_value_1_to_integer;
     integer real_value_2_to_integer;
 
-// Verilog simulation is done with respect to simulation time. A special time register data type is used in verilog to store simulation time. A time variable is declared with the keyword time. The width of the time register data type is implementaion specific(at least 64 bits).
+// Verilog simulation is done with respect to simulation time. A special time register data type is used in verilog to store simulation time. A time variable is declared with the keyword time. The width of the time register data type is implementation specific(at least 64 bits).
 // Note: Simulation time is measured in terms of simulation seconds.
 
     time current_time;

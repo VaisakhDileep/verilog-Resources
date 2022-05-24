@@ -36,7 +36,7 @@ Note: Assignment is based on the direction of the port signal.
 
     // input reg E; // This will given an error, since input ports cannot be "reg".
 
-    input E; // Not necessary, but we can do in one step too.
+    input wire E; // Not necessary, but we can do in one step too.
 
     input F;
 

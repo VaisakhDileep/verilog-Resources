@@ -8,7 +8,7 @@ Description : This program helps to understand escaped identifiers in verilog.
 Identifier naming rule: Identifiers are made up of alphanumeric characters, underscore('_') and the dollar sign('$') and are case-sensitive. Identifiers should start with an alphabet or an underscore(should not start with '$').
 */
 
-module represent_escaped_identifer();
+module represent_escaped_identifier();
 
     integer _one_; // This is valid.
 
@@ -28,6 +28,11 @@ module represent_escaped_identifer();
     = 8; // This is valid(including newline after the identifier).
 
     initial begin
+        // $display("\\$@******@$: %-d", \$@******@$); // This will give an error since we haven't used space after "\$@******@$".
+        $display("\\$@******@$: %-d", \$@******@$ ); // Make sure to add a space after "\$@******@$".
+
+        $display("\\$@********@$: %-d", \$@********@$ );
+
         $finish;
     end
 
