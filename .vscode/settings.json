@@ -6,6 +6,7 @@
         "bufif",
         "casex",
         "casez",
+        "endfunction",
         "endmodule",
         "monitoroff",
         "monitoron",
