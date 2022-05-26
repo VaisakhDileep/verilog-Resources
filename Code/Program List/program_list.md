@@ -56,3 +56,4 @@ Program055: [This program helps to understand named blocks in verilog.](../Progr
 Program056: [This program helps to understand disable keyword in verilog.](../Program056/Program056.v)<br>
 Program057: [This program helps to understand tasks in verilog.](../Program057/Program057.v)<br>
 Program058: [This program helps to understand functions in verilog.](../Program058/Program058.v)<br>
+Program059: [This program helps to understand assign and deassign in verilog.](../Program059/Program059.v)<br>
