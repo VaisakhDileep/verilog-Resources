@@ -6,6 +6,7 @@
         "bufif",
         "casex",
         "casez",
+        "defparam",
         "endfunction",
         "endmodule",
         "monitoroff",

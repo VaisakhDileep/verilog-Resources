@@ -59,3 +59,4 @@ Program057: [This program helps to understand tasks in verilog.](../Program057/P
 Program058: [This program helps to understand functions in verilog.](../Program058/Program058.v)<br>
 Program059: [This program helps to understand assign and deassign in verilog.](../Program059/Program059.v)<br>
 Program060: [This program helps to understand force and release in verilog.](../Program060/Program060.v)<br>
+Program062: [This program helps to understand defparam statement in verilog.](../Program062/Program062.v)<br>
