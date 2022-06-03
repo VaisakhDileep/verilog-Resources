@@ -1,7 +1,7 @@
 /*
 Created by  : Vaisakh Dileep
 Date        : 1, June, 2022
-Description : This program helps to understand defparam statement in verilog.
+Description : This program helps to understand how to override parameter values using defparam statement in verilog.
 */
 
 module module_2();
